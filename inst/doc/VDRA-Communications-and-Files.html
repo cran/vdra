@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+<meta name="date" content="2021-09-06" />
+
+<title>VDRA Communications and Files</title>
+
+<script src="data:application/javascript;base64,Ly8gUGFuZG9jIDIuOSBhZGRzIGF0dHJpYnV0ZXMgb24gYm90aCBoZWFkZXIgYW5kIGRpdi4gV2UgcmVtb3ZlIHRoZSBmb3JtZXIgKHRvCi8vIGJlIGNvbXBhdGlibGUgd2l0aCB0aGUgYmVoYXZpb3Igb2YgUGFuZG9jIDwgMi44KS4KZG9jdW1lbnQuYWRkRXZlbnRMaXN0ZW5lcignRE9NQ29udGVudExvYWRlZCcsIGZ1bmN0aW9uKGUpIHsKICB2YXIgaHMgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yQWxsKCJkaXYuc2VjdGlvbltjbGFzcyo9J2xldmVsJ10gPiA6Zmlyc3QtY2hpbGQiKTsKICB2YXIgaSwgaCwgYTsKICBmb3IgKGkgPSAwOyBpIDwgaHMubGVuZ3RoOyBpKyspIHsKICAgIGggPSBoc1tpXTsKICAgIGlmICghL15oWzEtNl0kL2kudGVzdChoLnRhZ05hbWUpKSBjb250aW51ZTsgIC8vIGl0IHNob3VsZCBiZSBhIGhlYWRlciBoMS1oNgogICAgYSA9IGguYXR0cmlidXRlczsKICAgIHdoaWxlIChhLmxlbmd0aCA+IDApIGgucmVtb3ZlQXR0cmlidXRlKGFbMF0ubmFtZSk7CiAgfQp9KTsK"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+
+
+
+
+<link rel="stylesheet" href="data:text/css,body%20%7B%0Abackground%2Dcolor%3A%20%23fff%3B%0Amargin%3A%201em%20auto%3B%0Amax%2Dwidth%3A%20700px%3B%0Aoverflow%3A%20visible%3B%0Apadding%2Dleft%3A%202em%3B%0Apadding%2Dright%3A%202em%3B%0Afont%2Dfamily%3A%20%22Open%20Sans%22%2C%20%22Helvetica%20Neue%22%2C%20Helvetica%2C%20Arial%2C%20sans%2Dserif%3B%0Afont%2Dsize%3A%2014px%3B%0Aline%2Dheight%3A%201%2E35%3B%0A%7D%0A%23TOC%20%7B%0Aclear%3A%20both%3B%0Amargin%3A%200%200%2010px%2010px%3B%0Apadding%3A%204px%3B%0Awidth%3A%20400px%3B%0Aborder%3A%201px%20solid%20%23CCCCCC%3B%0Aborder%2Dradius%3A%205px%3B%0Abackground%2Dcolor%3A%20%23f6f6f6%3B%0Afont%2Dsize%3A%2013px%3B%0Aline%2Dheight%3A%201%2E3%3B%0A%7D%0A%23TOC%20%2Etoctitle%20%7B%0Afont%2Dweight%3A%20bold%3B%0Afont%2Dsize%3A%2015px%3B%0Amargin%2Dleft%3A%205px%3B%0A%7D%0A%23TOC%20ul%20%7B%0Apadding%2Dleft%3A%2040px%3B%0Amargin%2Dleft%3A%20%2D1%2E5em%3B%0Amargin%2Dtop%3A%205px%3B%0Amargin%2Dbottom%3A%205px%3B%0A%7D%0A%23TOC%20ul%20ul%20%7B%0Amargin%2Dleft%3A%20%2D2em%3B%0A%7D%0A%23TOC%20li%20%7B%0Aline%2Dheight%3A%2016px%3B%0A%7D%0Atable%20%7B%0Amargin%3A%201em%20auto%3B%0Aborder%2Dwidth%3A%201px%3B%0Aborder%2Dcolor%3A%20%23DDDDDD%3B%0Aborder%2Dstyle%3A%20outset%3B%0Aborder%2Dcollapse%3A%20collapse%3B%0A%7D%0Atable%20th%20%7B%0Aborder%2Dwidth%3A%202px%3B%0Apadding%3A%205px%3B%0Aborder%2Dstyle%3A%20inset%3B%0A%7D%0Atable%20td%20%7B%0Aborder%2Dwidth%3A%201px%3B%0Aborder%2Dstyle%3A%20inset%3B%0Aline%2Dheight%3A%2018px%3B%0Apadding%3A%205px%205px%3B%0A%7D%0Atable%2C%20table%20th%2C%20table%20td%20%7B%0Aborder%2Dleft%2Dstyle%3A%20none%3B%0Aborder%2Dright%2Dstyle%3A%20none%3B%0A%7D%0Atable%20thead%2C%20table%20tr%2Eeven%20%7B%0Abackground%2Dcolor%3A%20%23f7f7f7%3B%0A%7D%0Ap%20%7B%0Amargin%3A%200%2E5em%200%3B%0A%7D%0Ablockquote%20%7B%0Abackground%2Dcolor%3A%20%23f6f6f6%3B%0Apadding%3A%200%2E25em%200%2E75em%3B%0A%7D%0Ahr%20%7B%0Aborder%2Dstyle%3A%20solid%3B%0Aborder%3A%20none%3B%0Aborder%2Dtop%3A%201px%20solid%20%23777%3B%0Amargin%3A%2028px%200%3B%0A%7D%0Adl%20%7B%0Amargin%2Dleft%3A%200%3B%0A%7D%0Adl%20dd%20%7B%0Amargin%2Dbottom%3A%2013px%3B%0Amargin%2Dleft%3A%2013px%3B%0A%7D%0Adl%20dt%20%7B%0Afont%2Dweight%3A%20bold%3B%0A%7D%0Aul%20%7B%0Amargin%2Dtop%3A%200%3B%0A%7D%0Aul%20li%20%7B%0Alist%2Dstyle%3A%20circle%20outside%3B%0A%7D%0Aul%20ul%20%7B%0Amargin%2Dbottom%3A%200%3B%0A%7D%0Apre%2C%20code%20%7B%0Abackground%2Dcolor%3A%20%23f7f7f7%3B%0Aborder%2Dradius%3A%203px%3B%0Acolor%3A%20%23333%3B%0Awhite%2Dspace%3A%20pre%2Dwrap%3B%20%0A%7D%0Apre%20%7B%0Aborder%2Dradius%3A%203px%3B%0Amargin%3A%205px%200px%2010px%200px%3B%0Apadding%3A%2010px%3B%0A%7D%0Apre%3Anot%28%5Bclass%5D%29%20%7B%0Abackground%2Dcolor%3A%20%23f7f7f7%3B%0A%7D%0Acode%20%7B%0Afont%2Dfamily%3A%20Consolas%2C%20Monaco%2C%20%27Courier%20New%27%2C%20monospace%3B%0Afont%2Dsize%3A%2085%25%3B%0A%7D%0Ap%20%3E%20code%2C%20li%20%3E%20code%20%7B%0Apadding%3A%202px%200px%3B%0A%7D%0Adiv%2Efigure%20%7B%0Atext%2Dalign%3A%20center%3B%0A%7D%0Aimg%20%7B%0Abackground%2Dcolor%3A%20%23FFFFFF%3B%0Apadding%3A%202px%3B%0Aborder%3A%201px%20solid%20%23DDDDDD%3B%0Aborder%2Dradius%3A%203px%3B%0Aborder%3A%201px%20solid%20%23CCCCCC%3B%0Amargin%3A%200%205px%3B%0A%7D%0Ah1%20%7B%0Amargin%2Dtop%3A%200%3B%0Afont%2Dsize%3A%2035px%3B%0Aline%2Dheight%3A%2040px%3B%0A%7D%0Ah2%20%7B%0Aborder%2Dbottom%3A%204px%20solid%20%23f7f7f7%3B%0Apadding%2Dtop%3A%2010px%3B%0Apadding%2Dbottom%3A%202px%3B%0Afont%2Dsize%3A%20145%25%3B%0A%7D%0Ah3%20%7B%0Aborder%2Dbottom%3A%202px%20solid%20%23f7f7f7%3B%0Apadding%2Dtop%3A%2010px%3B%0Afont%2Dsize%3A%20120%25%3B%0A%7D%0Ah4%20%7B%0Aborder%2Dbottom%3A%201px%20solid%20%23f7f7f7%3B%0Amargin%2Dleft%3A%208px%3B%0Afont%2Dsize%3A%20105%25%3B%0A%7D%0Ah5%2C%20h6%20%7B%0Aborder%2Dbottom%3A%201px%20solid%20%23ccc%3B%0Afont%2Dsize%3A%20105%25%3B%0A%7D%0Aa%20%7B%0Acolor%3A%20%230033dd%3B%0Atext%2Ddecoration%3A%20none%3B%0A%7D%0Aa%3Ahover%20%7B%0Acolor%3A%20%236666ff%3B%20%7D%0Aa%3Avisited%20%7B%0Acolor%3A%20%23800080%3B%20%7D%0Aa%3Avisited%3Ahover%20%7B%0Acolor%3A%20%23BB00BB%3B%20%7D%0Aa%5Bhref%5E%3D%22http%3A%22%5D%20%7B%0Atext%2Ddecoration%3A%20underline%3B%20%7D%0Aa%5Bhref%5E%3D%22https%3A%22%5D%20%7B%0Atext%2Ddecoration%3A%20underline%3B%20%7D%0A%0Acode%20%3E%20span%2Ekw%20%7B%20color%3A%20%23555%3B%20font%2Dweight%3A%20bold%3B%20%7D%20%0Acode%20%3E%20span%2Edt%20%7B%20color%3A%20%23902000%3B%20%7D%20%0Acode%20%3E%20span%2Edv%20%7B%20color%3A%20%2340a070%3B%20%7D%20%0Acode%20%3E%20span%2Ebn%20%7B%20color%3A%20%23d14%3B%20%7D%20%0Acode%20%3E%20span%2Efl%20%7B%20color%3A%20%23d14%3B%20%7D%20%0Acode%20%3E%20span%2Ech%20%7B%20color%3A%20%23d14%3B%20%7D%20%0Acode%20%3E%20span%2Est%20%7B%20color%3A%20%23d14%3B%20%7D%20%0Acode%20%3E%20span%2Eco%20%7B%20color%3A%20%23888888%3B%20font%2Dstyle%3A%20italic%3B%20%7D%20%0Acode%20%3E%20span%2Eot%20%7B%20color%3A%20%23007020%3B%20%7D%20%0Acode%20%3E%20span%2Eal%20%7B%20color%3A%20%23ff0000%3B%20font%2Dweight%3A%20bold%3B%20%7D%20%0Acode%20%3E%20span%2Efu%20%7B%20color%3A%20%23900%3B%20font%2Dweight%3A%20bold%3B%20%7D%20%0Acode%20%3E%20span%2Eer%20%7B%20color%3A%20%23a61717%3B%20background%2Dcolor%3A%20%23e3d2d2%3B%20%7D%20%0A" type="text/css" />
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+<h1 class="title toc-ignore">VDRA Communications and Files</h1>
+<h4 class="date">2021-09-06</h4>
+
+
+<div id="TOC">
+<ul>
+<li><a href="#introduction"><span class="toc-section-number">1</span> Introduction</a></li>
+<li><a href="#data-partners-and-trusted-third-parties"><span class="toc-section-number">2</span> Data Partners and Trusted Third Parties</a></li>
+<li><a href="#a-high-level-view-of-the-communication-process"><span class="toc-section-number">3</span> A High-Level View of the Communication Process</a></li>
+<li><a href="#the-local-directory-structure"><span class="toc-section-number">4</span> The Local Directory Structure</a></li>
+<li><a href="#files-used-for-communication"><span class="toc-section-number">5</span> Files used for Communication</a></li>
+</ul>
+</div>
+
+<div id="introduction" class="section level1" number="1">
+<h1 number="1"><span class="header-section-number">1</span> Introduction</h1>
+<p>While the <code>VDRA</code> package was specifically designed to work with PopMedNet, the intent of this project was to produce a package that could be modified, with some effort, to be used with other automated file transfer programs. With that end in mind, the purpose of this vignette is to explain how the <code>VDRA</code> package and PopMedNet communicate with each other, and also to outline certain design considerations that had to be implemented in the VDRA package due how PopMedNet itself is designed.</p>
+<p>The functions that handle the actual communication side of the <code>VDRA</code> package can be found in the file <code>vertical_utilities.R</code> in the four code sections that contain the phrase “PMN Communication Functions.” Ideally, with the aid of this vignette, modifying those functions appropriately will allow one to interface with different protocols.</p>
+</div>
+<div id="data-partners-and-trusted-third-parties" class="section level1" number="2">
+<h1 number="2"><span class="header-section-number">2</span> Data Partners and Trusted Third Parties</h1>
+<p>As outlined in the vignette “An Introduction to the VDRA Package,” there are three different protocols for vertical distributed regression analysis (VDRA) implemented in this package. They are called <span class="math inline">\(2\)</span>-party, <span class="math inline">\(2^T\)</span>-party, and <span class="math inline">\(k^T\)</span>-party. The <span class="math inline">\(2\)</span>-party protocol has two parties named <code>dp0</code> and <code>dp1</code>, the <span class="math inline">\(2^T\)</span>-party protocol has three parties named <code>dp0</code>, <code>dp1</code>, and <code>dp2</code>, and the <span class="math inline">\(k^T\)</span>-protocol has <span class="math inline">\(k+1\)</span> parties named <code>dp0</code>, <code>dp1</code>, …, <code>dpk</code>. The party <code>dp0</code> is known as the “Analysis Center” and is monitored by PopMedNet for a signal that indicates when the computation has successfully completed or has failed. A party which is not the Analysis Center is known as a “Data Partner.” The <span class="math inline">\(T\)</span> in the <span class="math inline">\(2^T\)</span>- and <span class="math inline">\(k^T\)</span>-protocols stands for “trusted” which indicates the presence of a “trusted third” party which provides no data but assists in the computation. There is no trusted party for the <span class="math inline">\(2\)</span>-protocol, but the party <span class="math inline">\(dp0\)</span> is the trusted party for the other two protocols. While not important for this vignette, it is also assumed that for the <span class="math inline">\(2\)</span>-party protocol, <span class="math inline">\(dp0\)</span> holds the response variable(s), and that for the <span class="math inline">\(2^T\)</span>- and <span class="math inline">\(k^T\)</span>-party protocols <span class="math inline">\(dp1\)</span> holds the response variable(s).</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Protcol</th>
+<th align="left">Analysis.Center</th>
+<th align="left">Holds.response</th>
+<th align="left">Data.partners</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><span class="math inline">\(2\)</span>-party</td>
+<td align="left">dp0</td>
+<td align="left">dp0</td>
+<td align="left">dp1</td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(2^T\)</span>-party</td>
+<td align="left">dp0</td>
+<td align="left">dp1</td>
+<td align="left">dp1, dp2</td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(k^T\)</span>-party</td>
+<td align="left">dp0</td>
+<td align="left">dp1</td>
+<td align="left">dp1, dp2, …, dpk</td>
+</tr>
+</tbody>
+</table>
+<p>While the idea is that each party is running on a different machine in a location remote from the others, this is not necessary. We have tested this package both with three different parties on three machines located in three states (Illinois, Pennsylvania, and Massachusetts) running a single vertically distributed regression, and two to 10 parties running all on the same desktop computer to solve a single vertically distributed regression.</p>
+</div>
+<div id="a-high-level-view-of-the-communication-process" class="section level1" number="3">
+<h1 number="3"><span class="header-section-number">3</span> A High-Level View of the Communication Process</h1>
+<p>PopMedNet is used to facilitate secure communication between clients. In order to do this, a “request” must be set up on PopMedNet. A request consists of choosing the clients and their roles (analysis center or data partner) to be involved in the distributed regression analysis and sending out an initial payload that will be downloaded to all parties (usually consisting of a script for each party to execute). Once a request has been created, PopMedNet distributes the payload to each data partner and waits for communication from the clients. The details of how to set up a request can be found in the PopMedNet help pages.</p>
+<p>As of the writing of this vignette, every client which will participate in a distributed regression computation must have the <code>PMN DataMart Client</code> running. The purpose of the DatamMart Client is to provide a communication channel between the computer on which a party is running and the PopMedNet Server. Currently, the DataMart Client is only available to run on Windows.</p>
+<p>A communication round, or step, proceeds as follows. First, PopMedNet sends files to various clients via the DataMart Client which saves them on the respective remote computers. Once all the files are written to a specific computer, the local DataMart Client writes a trigger file that indicates that all the files have arrived. The local computer is running the R script which was sent to it. This script reads the files, performs some computations, and writes some new files along with a file that specifies the party to which each of the files should be sent, and a trigger file that indicates to the DataMart Client that all the files have been written. The client reads these files and sends them to PopMedNet. Once all the files have been received by PopMedNet from all parties to which files had been sent, PopMedNet sends all of the incoming files to their respective target parties (via the appropriate client), and the process begins all over again.</p>
+<p>Each client can send a special file to PopMedNet that indicates it is shutting down and no longer expects to receive any more files. Once this file is sent, the local DataMart Client ceases to scan for more incoming files. When the analysis center (<code>dp0</code>) indicates that it is shutting down, PopMedNet considers the computation complete and will terminate the request.</p>
+<p><img src="data:image/png;base64,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" width="75%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="the-local-directory-structure" class="section level1" number="4">
+<h1 number="4"><span class="header-section-number">4</span> The Local Directory Structure</h1>
+<p>The DataMart Client is configured to both read from and write to a specific directory on the machine to which each party is running. When running this R-script, this directory is set using the parameter <code>monitorFolder</code>. The author of the package prefers to use the directories <code>D:/vdra/dp0</code>, <code>D:/vdra/dp1</code>, etc. for data partners <code>dp0</code>, <code>dp1</code>, etc. respectively. More information on configuring the DataMart Client can be found in the vignette “How to Use the VDRA Package with PopMedNet”.</p>
+<p>Every request initiated by PopMedNet has a unique Request ID. When a DataMart Client receives the initial payload from PopMedNet, it will create a sub-directory under <code>monitorFolder</code> which is named after the Request ID. The Request ID is specified in the R-script using the parameter <code>msreqid</code>. This allows a single client to start with a clean directory structure each time it participates in a new request from PopMedNet. (If the PopMedNet simulator <code>pmn()</code> is being used to test out the package instead of PopMedNet, then <code>msreqid</code> is not included in the directory structure.)</p>
+<p>The directory specified by <code>msreqid</code> contains the further sub-directories <code>inputfiles</code>, <code>msoc</code>, <code>msoc1</code>, <span class="math inline">\(\dots\)</span>, <code>msoc(k)</code>. The analysis center (<code>dp0</code>) writes files to <code>inputfiles</code> and the data partners all write files to <code>msoc</code>. For all clients (both the analysis center and the data partners), files which are received from the analysis center are written to <code>inputfiles</code>, files which are received from <code>dp1</code> are written to <code>msoc1</code>, files which received from <code>dp2</code> are written to <code>msoc2</code>, etc.</p>
+<p>Three other folder, <code>dplocal</code>, <code>macros</code>, and <code>rprograms</code>, are included in the directory structure for historical reasons, but are not used for communications.</p>
+<pre><code>Directory Structure
+
+└───monitorFolder
+    └───msreqid
+        ├───inputfiles
+        ├───msoc
+        ├───msoc1
+        ├───msoc2
+        ├───msoc3
+        ├───dplocal
+        ├───macros
+        └───rprograms</code></pre>
+<table>
+<caption>Where each client write files.</caption>
+<thead>
+<tr class="header">
+<th align="left">Write.Directory</th>
+<th align="left">Client.Writing.files</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">inputfiles</td>
+<td align="left">dp0</td>
+</tr>
+<tr class="even">
+<td align="left">msoc</td>
+<td align="left">dp1, dp2, dp3</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption>Where files from each client are read.</caption>
+<thead>
+<tr class="header">
+<th align="left">Read.Directory</th>
+<th align="left">Client.which.sent.the.files</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">inputfiles</td>
+<td align="left">dp0</td>
+</tr>
+<tr class="even">
+<td align="left">msoc1</td>
+<td align="left">dp1</td>
+</tr>
+<tr class="odd">
+<td align="left">msoc2</td>
+<td align="left">dp2</td>
+</tr>
+<tr class="even">
+<td align="left">msoc3</td>
+<td align="left">dp3</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="files-used-for-communication" class="section level1" number="5">
+<h1 number="5"><span class="header-section-number">5</span> Files used for Communication</h1>
+<p>PopMedNet is designed to work with four types of files: .zip, .rdata, .csv, and .ok. In current usage of this project, .zip files are only used to distribute the initial package, which could just contain the scripts the clients are expected to run or even the full directory structure as described above. Files with the suffixes .rdata and .csv are used to transfer data between clients and to PopMedNet, while files with the suffix .ok are used as trigger files to indicate that some action needs to be taken. This section describes the files which are used to control communication between the clients and PopMedNet.</p>
+<ol style="list-style-type: decimal">
+<li><p>Trigger files. Trigger files do not need to contain any information; it is the name of the file which indicates the action to be taken.</p>
+<ol style="list-style-type: lower-alpha">
+<li><p><code>files_done.ok</code>: After the last file has been transferred from PopMedNet to the client, the DataMart Client writes the file <code>files_done.ok</code> to the same directory. This is used as a trigger file to indicate to the R-script that the it can begin reading files. The R-script deletes this file once it sees it in order to prepare for the next round of reading files. After the R-script finishes writing all the data files it needs to send, it writes <code>files_done.ok</code> to the same directory to which the files were written. This signals the DataMart Client that the files are ready to be transferred to PopMedNet. The DataMart Client deletes this file once it begins transferring files.</p></li>
+<li><p><code>job_started.ok</code>: The first time a client writes files, it should use <code>job_started.ok</code> instead of <code>files_done.ok</code>. However, this is not actually enforced by PopMedNet nor the DataMartClient.</p></li>
+<li><p><code>job_done.ok</code>: A client writes this file to indicate that its role in the vertical distributed regression request is complete and that it is quitting. The DataMart Client will cease to send files to or accept files from PopMedNet.</p></li>
+<li><p><code>job_fail.ok</code>: Similar to <code>job_done.ok</code> but additionally indicates that the client is quitting due to encountering an error.</p></li>
+</ol></li>
+<li><p><code>file_list.csv</code>: This file tells PopMedNet where to send the data files that it is receiving from the client. This file has three columns: <code>file_nm</code>, <code>transfer_to_site</code>, and <code>dp_cd_list</code>.</p>
+<ol style="list-style-type: lower-alpha">
+<li><p><code>file_name</code>: The name of the file which is being transferred. Not only does it include the data files which are to be transferred to other clients, but it should also include <code>file_list.csv</code> as well as <code>job_done.ok</code> or <code>job_fail.ok</code> if they exist.</p></li>
+<li><p><code>transfer_to_site</code>: Takes on the value of 1 if the file is being sent to a data partner or 10 if the file is being sent to PopMedNet. <code>file_list.csv</code>, <code>job_done.ok</code>, and <code>job_fail.ok</code> are sent to PopMedNet and so should have a value of 10.</p></li>
+<li><p><code>dp_cd_list</code>: The code of the data partner to which the file is being sent. That is, it is 0 if the file is being sent to the Analysis Center (<code>dp0</code>), 1 if it is being sent to Data Partner 1 (<code>dp1</code>), etc.</p></li>
+</ol></li>
+</ol>
+<table>
+<caption>file_list.csv for sending files from dp0 to both dp1 and dp2.</caption>
+<thead>
+<tr class="header">
+<th align="left">file_nm</th>
+<th align="left">transfer_to_site</th>
+<th align="left">dp_cd_list</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">stats.rdata</td>
+<td align="left">1</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">stamps.rdata</td>
+<td align="left">1</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">log.rdata</td>
+<td align="left">1</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">stats.rdata</td>
+<td align="left">1</td>
+<td align="left">2</td>
+</tr>
+<tr class="odd">
+<td align="left">stamps.rdata</td>
+<td align="left">1</td>
+<td align="left">2</td>
+</tr>
+<tr class="even">
+<td align="left">log.rdata</td>
+<td align="left">1</td>
+<td align="left">2</td>
+</tr>
+<tr class="odd">
+<td align="left">file_list.csv</td>
+<td align="left">10</td>
+<td align="left">10</td>
+</tr>
+<tr class="even">
+<td align="left">dl_track_tbl.csv</td>
+<td align="left">10</td>
+<td align="left">10</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption>file_list.csv for dp0 ending the PopMedNet request.</caption>
+<thead>
+<tr class="header">
+<th align="left">file_nm</th>
+<th align="left">transfer_to_site</th>
+<th align="left">dp_cd_list</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">dl_track_tbl.csv</td>
+<td align="left">10</td>
+<td align="left">10</td>
+</tr>
+<tr class="even">
+<td align="left">file_list.csv</td>
+<td align="left">10</td>
+<td align="left">10</td>
+</tr>
+<tr class="odd">
+<td align="left">job_done.ok</td>
+<td align="left">10</td>
+<td align="left">10</td>
+</tr>
+</tbody>
+</table>
+<ol start="3" style="list-style-type: decimal">
+<li><p>Other files: The files <code>dl_track_tbl.csv</code>, <code>log.rdata</code>, <code>stamps.rdata</code>, and <code>tr_tb_updt.rdata</code> are used for logging the activity of the different clients for diagnostic purposes and so are not outlined here. Final copies of these files named <code>log.csv</code>, <code>log_summary.csv</code>, and <code>stamps.csv</code> are saved in the work directories. Generally, they record what functions are run by each client during each round and which data files are sent to which clients. They are also useful for debugging purposes.</p></li>
+<li><p><code>empty.rdata</code>: This is not a required file, but rather a feature of PopMedNet. For a client to act during a round or step (which can include processing or sending files), it must first receive a file. However, PopMedNet does not allow a client to send a file to itself. This can be problematic if a client needs to act and send files for two rounds in a row but there is no active client during the first round to send it a data file. To get around this difficulty, we would send <code>empty.rdata</code> to an otherwise dormant client to wake it up so it could send <code>empty.rdata</code> to the original client in order to allow it to process for two rounds in a row. It is hoped that in future versions of PopMedNet, a more efficient mechanism will be implemented which allows a client to either send a file to itself or to indicate to PopMednet that it will be sending files during the next round even if it doesn’t receive a file.</p></li>
+</ol>
+</div>
+
+
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
